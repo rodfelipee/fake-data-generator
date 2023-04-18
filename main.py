@@ -9,7 +9,6 @@ wb = Workbook()
 
 # Seleciona a primeira planilha
 ws = wb.active
-ws.title("DataBase")
 
 # Cria as células para os dados pessoais
 ws['A1'] = 'Nome'
@@ -29,4 +28,4 @@ for row in range(2, 101):
     ws.cell(row=row, column=4, value=email)
 
 # Salva a planilha em um arquivo
-wb.save('dados_pessoais.xlsx')
+wb.save('data.xlsx')
